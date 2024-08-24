@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 * {
@@ -87,6 +88,61 @@ div> input[type='text'] {
 .book-shelf {
     display: grid;
     width: 80vw;
-    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin: 20px 10vw;
+
 }
+.book-shelf>div {
+    margin: 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 550;
+    border: 2px solid black;
+    background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    padding: 20px;
+    color: white;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* padding-top: 30px; */
+}
+
+.button > #new-book-black {
+    background-color: #1e293b;
+    color: white;
+}
+
+.button > #new-book-white {
+    background-color: white;
+    color: black;
+}
+.button > button {
+    padding: 8px 24px;
+    font-weight: 650;
+    font-size: 1.1rem;
+    border: 2px solid black;
+    border-radius: 24px;
+}
+.button {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.display-books {
+    padding-top: 30px;
+}
+.book-shelf > div > button {
+
+    background-color: black;
+    color: white;
+    font-weight: 550;
+    border-radius: 24px;
+    padding: 6px 18px;
+    border: 2px solid white;
+    margin: 8px 0px 2px 5px;
+}
+
